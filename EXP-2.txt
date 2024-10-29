@@ -1,0 +1,353 @@
+STUDENT REGISTRATION FORM 
+
+<!doctypehtml>
+<html>
+	<head>
+		<title> Student Registration Form</title>
+		<link rel="stylesheet" href="Student registration.css">
+	</head>
+	<body>
+		<form>
+			<table>
+				<caption><b>Student Registration Form</b></caption>
+				<tr>
+					<th>Roll Number</th>
+					<td>
+						<input type="text" required maxlength="9" name="roll_number">
+						<label>*Max 9 Characters</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Full Name</th>
+					<td>
+						<input type="text" name="full_name" placeholder="Tama naa" required>	
+					</td>
+				</tr>
+				<tr>
+					<th>Address</th>
+					<td>
+						<textarea  name="address" rows="3" cols="30" placeholder="Tama Ghara" required></textarea>
+						<label>Display 3 Lines</label>	
+					</td>
+				</tr>
+				<tr>
+					<th>Date of Birth</th>
+					<td>
+						<input type="date" name="dob" required>	
+					</td>
+				</tr>
+				<tr>
+					<th>Phone No</th>
+					<td>
+						<input type="text" name="full_name" minlength="10" maxlength="13" value="+91" required>	
+					</td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td>
+						<input type="mail" name="mail" placeholder="demo@demo.com" required>	
+					</td>
+				</tr>
+				<tr>
+					<th>Password</th>
+					<td>
+						<input type="password" name="password" minlength="3" maxlength="10" required>
+						<label>*Max 10 characters</label>	
+					</td>
+				</tr>
+				<tr>
+					<th>Re-Enter Password</th>
+					<td>
+						<input type="password" name="re_password" minlength="3" maxlength="10" required>	
+					</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+						<input type="radio" name="gender" value="male" checked>
+						<label>Male</label>
+						<input type="radio" name="gender" value="female">
+						<label>Female</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Tota Family Income</th>
+					<td>
+						<input type="radio" name="total_family_income" value="<2 Lakh">
+						<label><2 Lakh</label>
+						<input type="radio" name="total_family_income" value=">3 & <5 Lakh" checked>
+						<label>>3 & <5 Lakh</label>
+						<input type="radio" name="total_family_income" value=">5 & <10 Lakh">
+						<label>>5 & <10 Lakh</label>
+						<input type="radio" name="total_family_income" value=">10 Lakh">
+						<label>>10 Lakh</label>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						PROG. SKILLS
+						<br>
+						<label>Choose any Languages by Pressin Ctrl</label>
+					</th>
+					<td>
+						<select name="programming_languages" multiple>
+							<option value="C" checked>C</option>
+							<option value="C++">C++</option>
+							<option value="C#">C#</option>
+							<option value="PASCAL">PASCAL</option>
+							<option value="BASIC">BASIC</option>
+							<option value="COBOL">COBOL</option>
+							<option value="PYTHON">PYTHON</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Branch
+					</th>
+					<td>
+						<select name="branch" required>
+							<option value="CSE" checked>CSE</option>
+							<option value="ECE">ECE</option>
+							<option value="EEE">EEE</option>
+							<option value="EE">EE</option>
+							<option value="ME">ME</option>
+							<option value="CE">CE</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Hobbies</th>
+					<td>
+						<input type="checkbox" name="hobbies" value="sports">
+						<label>Sports</label>
+						<input type="checkbox" name="hobbies" value="movies" checked>
+						<label>Movies</label>
+						<input type="checkbox" name="hobbies" value="fashion">
+						<label>Fashion</label>
+						<input type="checkbox" name="hobbies" value="health" checked>
+						<label>Health</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Type of Job Required</th>
+					<td>
+						<input type="radio" name="job" value="software" checked>
+						<label>Software</label>
+						<input type="radio" name="job" value="hardware">
+						<label>Hardware</label>
+						<input type="radio" name="job" value="networking">
+						<label>Networking</label>
+						<input type="radio" name="job" value="manager">
+						<label>Manager</label>
+						<input type="radio" name="job" value="research">
+						<label>Research</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Upload your Bio Data</th>
+					<td>
+						<input type="file" name="bio_data" required>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" value="OK" >
+						<input type="submit" value="CANCEL" >
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
+
+
+Page1.html: List of my Friends
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page1.html - List of my Friends</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgrey;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h2>List of my Friends</h2>
+    <table>
+        <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Ram Kumar</td>
+            <td>87</td>
+        </tr>
+        <tr class="highlight">
+            <td>42</td>
+            <td>Diraj Panda</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Kishore Kumar Prusty</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Alex</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>St Lee</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+PGAE -2STUDENT HOBBIES TABLE
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page2.html - Student Hobbies Table</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: lightseagreen;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Hobbies Table</h2>
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Hobbies</th>
+        </tr>
+        <tr>
+            <td>350</td>
+            <td>Raj Kumar Pandey</td>
+            <td>Dance, Music, Sports</td>
+        </tr>
+        <tr>
+            <td>142</td>
+            <td>Dipak Kumar Pattnaik</td>
+            <td>Dance, Fashion, Sports</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Allok Kumar</td>
+            <td>Dance, Health, Sports, Movies</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+PAGE -3
+
+
+STUDENT RESULT 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page3.html - Student Result</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgrey;
+        }
+        .header {
+            background-color: lightseagreen;
+        }
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Result</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Roll No</th>
+            <th colspan="3">Full Name</th>
+            <th rowspan="2">Marks</th>
+        </tr>
+        <tr>
+            <th>First</th>
+            <th>Middle</th>
+            <th>Last</th>
+        </tr>
+        <tr class="header">
+            <td>350</td>
+            <td>Raj</td>
+            <td>Kumar</td>
+            <td>Pandey</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>142</td>
+            <td>Dipak</td>
+            <td>Kumar</td>
+            <td>Pattnaik</td>
+            <td>63</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Allok</td>
+            <td>Kumar</td>
+            <td></td>
+            <td>75</td>
+        </tr>
+    </table>
+</body>
+</html>
